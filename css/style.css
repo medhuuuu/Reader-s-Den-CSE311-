@@ -1,3 +1,7 @@
+body{
+    font-family: 'Merriweather', serif;
+    font-family: 'Oswald', sans-serif;
+}
 .navig{
     background-color:#fdf5ea ;
     border-radius: 1em;
@@ -35,4 +39,12 @@
 
 .w-25 {
     width: 60%!important;
+}
+
+.footer-part{
+    padding-bottom: 20px;
+}
+
+.heading-h3{
+    color: rgba(212, 169, 104, 0.822);
 }
