@@ -52,3 +52,7 @@ form button{
   float: right;
   padding-bottom: 50px;
 }
+
+.font{
+    font-family: 'Oswald', sans-serif;
+}
