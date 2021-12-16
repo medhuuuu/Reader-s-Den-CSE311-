@@ -15,16 +15,16 @@
 <body>
     <div class="sign-up">
         <h1 class="font">Sign Up</h1>
-        <form class="sign-up-form" action="">
-            <input type="text" id="input-box" placeholder="First name" required><br>
-            <input type="text" id="input-box" placeholder="Last name" required><br>
-            <input type="email" name="" id="input-box" placeholder="Email" required><br>
-            <input type="tel" name="" id="input-box" placeholder="Phone no: " required><br>
-            <input name="" id="input-box" class="adres-box" placeholder="Address" required><br>
-            <input type="password" name="" id="input-box" placeholder="Password" required><br>
-            <input type="password" name="" id="input-box" placeholder="Confirm password" required><br>
+        <form class="sign-up-form" action="sign_up.php" method="post">
+            <input type="text" name="first" id="first" class="input-box" placeholder="First name" required><br>
+            <input type="text" name="last" id="last" class="input-box" placeholder="Last name" required><br>
+            <input type="email" name="email" id="email" class="input-box" placeholder="Email" required><br>
+            <input type="tel" name="phn" id="phn" class="input-box" placeholder="Phone no: " required><br>
+            <input type="text" name="adres-box" id="adres-box" class="input-box" placeholder="Address" required><br>
+            <input type="password" name="pass" id="pass" class="input-box" placeholder="Password" required><br>
+            <input type="password" name="con_pass" id="con_pass" class="input-box" placeholder="Confirm password" required><br>
             <span class="sign-up-span font"><b>By clicking Confirm, I accept the terms and conditions.</b></span><br>
-            <button class="font">Confirm</button><br>
+            <input type="submit" class="font button" value="Confirm"><br>
             <span class="sign-up-span font"><b>Already have an account? <a href="sign-in.html">sign in</a></b></span>
 
         </form>

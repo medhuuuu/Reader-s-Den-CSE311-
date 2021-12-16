@@ -22,7 +22,7 @@ body{
     color: rgba(212, 169, 104, 0.822);
 }
 
-#input-box{
+.input-box{
     border-radius: 20px;
     padding: 10px;
     margin: 10px 0;
@@ -30,11 +30,11 @@ body{
     border: 1px solid #999;
 }
 
-.adres-box{
+#adres-box{
     height: 35px;
 }
 
-form button{
+form .button{
     margin: 10px 0;
     padding: 10px;
     border: none;
@@ -45,7 +45,7 @@ form button{
     background-color:  #f8e9d2b9;
 }
 
-.sign-up-form button:hover{
+.sign-up-form .button:hover{
     background-color: #f2dea2;
     color: azure;
     box-shadow: inset 0 0 0 5px #f2dea2;
