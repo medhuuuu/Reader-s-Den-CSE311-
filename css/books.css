@@ -1,0 +1,30 @@
+body{
+    font-family: 'Oswald', sans-serif;
+}
+.books{
+    margin: 50px;
+    padding: 10px;
+    box-shadow: gray 5px 5px 10px;
+}
+h1{
+    padding-top: 20px;
+}
+
+.button{
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    width: 80%;
+    background-color:  #f8e9d2b9;
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover{
+    background-color: #f2dea2;
+    color: azure;
+    box-shadow: inset 0 0 0 5px #f2dea2;
+}

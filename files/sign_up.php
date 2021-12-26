@@ -28,6 +28,7 @@ $sql= "INSERT INTO sign_up(first_name, last_name, email, phone_no, address, pass
  if(mysqli_query($db, $sql))
  {
     // echo "info added";
+    header("LOCATION: sign-in.html");
  }
  else{
      echo "there is an error: " . mysqli_error($db);
