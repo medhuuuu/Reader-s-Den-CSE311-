@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 26, 2021 at 09:02 PM
+-- Generation Time: Dec 27, 2021 at 08:40 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -100,11 +100,11 @@ INSERT INTO `book` (`ISBN`, `title`, `author_name`, `publication_id`, `price`, `
 (152, 'Himur kothamala', 'Humayun Ahmed', 3, 170, 'Drama', 'yes', '4.0', 'no', 'no', '2009-08-11'),
 (153, 'Cheleta', 'Humayun Ahmed', 4, 100, 'Romantic', 'no', '3.5', 'yes', 'no', '1994-02-04'),
 (154, 'Aaj Himur biye', 'Humayun Ahmed', 3, 200, 'Romantic', 'no', '2.5', 'no', 'no', '1997-05-30'),
-(155, 'Meyetar naam narina', 'Dr. Zafor Iqbal', 5, 150, 'Scinece-fiction', 'no', '2.6', 'no', 'no', '2014-11-10'),
+(155, 'Meyetar naam narina', 'Dr. Zafor Iqbal', 5, 220, 'Science-fiction', 'no', '3.3', 'no', 'no', '2011-02-21'),
 (156, 'Naat Boltu', 'Dr. Zafor Iqbal', 7, 170, 'Comedy', 'yes', '4.5', 'no', 'no', '1999-08-11'),
 (157, 'Keplar Tutubi', 'Dr. Zafor Iqbal', 1, 100, 'Science-fiction', 'no', '3.5', 'yes', 'no', '1992-02-04'),
 (158, 'Tuntuni o chotacchu', 'Dr. Zafor Iqbal', 7, 200, 'Comedy', 'no', '2.5', 'no', 'no', '2017-05-30'),
-(159, 'Serina', 'Dr. Zafor Iqbald', 5, 150, 'Science-fiction', 'no', '2.6', 'no', 'no', '2014-11-10'),
+(159, 'Serina', 'Dr. Zafor Iqbal', 6, 230, 'Science-fiction', 'yes', '4.2', 'no', 'yes', '2009-02-12'),
 (160, 'Ratuler raat Ratuler din', 'Dr. Zafor Iqbal', 3, 170, 'Drama', 'yes', '4.0', 'no', 'no', '1998-08-11'),
 (161, 'Iron', 'Dr. Zafor Iqbal', 6, 100, 'Science-fiction', 'no', '3.5', 'yes', 'no', '1989-02-04'),
 (162, 'Ondhokarer Pret', 'Dr. Zafor Iqbal', 5, 200, 'Science-fiction', 'no', '2.5', 'no', 'no', '2010-05-30'),
@@ -136,24 +136,24 @@ INSERT INTO `book` (`ISBN`, `title`, `author_name`, `publication_id`, `price`, `
 (190, 'Theory Of Relativity ', 'Dr. Zafor Iqbal', 5, 170, 'Education', 'yes', '4.7', 'no', 'no', '1997-08-11'),
 (191, 'Aro Ektukhani Bigyan', 'Dr. Zafor Iqbal', 6, 300, 'Education', 'no', '3.5', 'yes', 'no', '1992-02-04'),
 (192, 'Rongin Choshma', 'Dr. Zafor Iqbal', 4, 200, 'Biography', 'no', '2.5', 'no', 'no', '2009-05-30'),
-(193, 'Danob ', 'Dr. Zafor Iqbal', 2, 550, 'Sciencc-fiction', 'no', '2.6', 'no', 'no', '2010-11-10'),
-(194, 'Pishachini', 'Dr. Zafor Iqbal', 6, 170, 'Sciencc-fiction', 'yes', '4.0', 'no', 'no', '2010-08-11'),
+(193, 'Danob', 'Dr. Zafor Iqbal', 2, 300, 'Science-fiction', 'no', '4.1', 'no', 'yes', '2020-04-12'),
+(194, 'Pishachini', 'Dr. Zafor Iqbal', 5, 350, 'Science-fiction', 'no', '4.4', 'no', 'yes', '2019-04-07'),
 (195, 'Adhunik Ishoper Golpo', 'Dr. Zafor Iqbal', 4, 100, 'Drama', 'no', '3.5', 'yes', 'no', '2020-02-04'),
 (196, 'America', 'Dr. Zafor Iqbal', 5, 300, 'Biography', 'no', '4.5', 'no', 'yes', '2020-05-30'),
 (197, 'Desher Baire Desh', 'Dr. Zafor Iqbal', 3, 400, 'Biography', 'no', '3.5', 'no', 'no', '2008-05-30'),
-(198, 'Six Interesting Incidents ', 'Dr. Zafor Iqbal', 4, 250, 'Sciencc-fiction', 'no', '4.0', 'no', 'no', '2014-05-30'),
+(198, 'Six interesting thing', 'Dr. Zafor Iqbal', 6, 200, 'Science-fiction', 'yes', '3.9', 'yes', 'yes', '2012-02-03'),
 (199, 'Amar Boro Bhai Humayun Ahmed', 'Dr. Zafor Iqbal', 5, 220, 'Biography', 'no', '3.4', 'no', 'yes', '2015-05-30'),
 (200, 'Haatkata Robin', 'Dr. Zafor Iqbal', 5, 200, 'Thriller', 'no', '2.7', 'no', 'no', '2011-05-30'),
-(201, 'Project Akashlin', 'Dr. Zafor Iqbal', 6, 150, 'Scinence-fiction', 'no', '4.6', 'no', 'no', '2014-11-10'),
-(202, 'Krenial ', 'Dr. Zafor Iqbal', 5, 170, 'Scinence-fiction', 'yes', '4.0', 'no', 'no', '1999-08-11'),
-(203, 'Icaras ', 'Dr. Zafor Iqbal', 1, 100, 'Scinence-fiction', 'no', '3.5', 'yes', 'no', '1998-02-04'),
-(204, 'Animan', 'Dr. Zafor Iqbal', 3, 200, 'Scinence-fiction', 'no', '2.5', 'no', 'no', '2017-05-30'),
-(205, 'Kajoler Dinratri', 'Dr. Zafor Iqbal', 3, 150, 'Scinence-fiction', 'no', '2.6', 'no', 'no', '2014-11-10'),
-(206, 'Nitu O Taar Bondhura', 'Dr. Zafor Iqbal', 2, 170, 'Scinence-fiction', 'yes', '4.0', 'no', 'no', '1990-08-11'),
+(201, 'Project Akashin', 'Dr. Zafor Iqbal', 6, 300, 'Science-fiction', 'no', '4.1', 'no', 'yes', '2020-04-12'),
+(202, 'Krenial', 'Dr. Zafor Iqbal', 4, 300, 'Science-fiction', 'no', '4.1', 'no', 'yes', '2021-06-12'),
+(203, 'Icaras', 'Dr. Zafor Iqbal', 4, 320, 'Science-fiction', 'no', '4.3', 'no', 'no', '2010-02-12'),
+(204, 'Animan', 'Dr. Zafor Iqbal', 4, 350, 'Science-fiction', 'no', '4.5', 'yes', 'yes', '2013-02-11'),
+(205, 'Kajoler dinratri', 'Dr. Zafor Iqbal', 5, 340, 'Science-fiction', 'no', '4.7', 'no', 'no', '2013-02-02'),
+(206, 'Nitu o taar bhondura', 'Dr. Zafor Iqbal', 3, 320, 'Science-fiction', 'no', '2.3', 'no', 'no', '2014-02-06'),
 (207, 'Abrity', 'Anisul Haque', 1, 100, 'Poetry', 'no', '3.5', 'yes', 'no', '2021-02-04'),
 (208, 'Sobuj Mather Gashe', 'Anisul Haque', 3, 200, 'Poetry', 'no', '4.5', 'no', 'no', '2019-05-30'),
 (209, 'Oporapor', 'Anisul Haque', 4, 150, 'Poetry', 'no', '3.6', 'no', 'no', '2016-11-10'),
-(210, 'Kheya', 'Anisul Haque', 7, 170, 'Poetryr', 'yes', '4.0', 'no', 'no', '2005-08-11'),
+(210, 'Kheya', 'Anisul Haque', 6, 200, 'Poetry', 'no', '4.0', 'no', 'no', '2008-02-12'),
 (211, 'Fand', 'Anisul Haque', 8, 100, 'Poetry', 'no', '3.5', 'yes', 'no', '2005-02-04'),
 (212, 'Se ', 'Anisul Haque', 8, 200, 'Poetry', 'no', '2.5', 'no', 'no', '2017-05-30'),
 (213, 'Maa', 'Anisul Haque', 8, 150, 'War', 'no', '2.6', 'no', 'no', '2015-11-10'),
@@ -220,6 +220,33 @@ INSERT INTO `book` (`ISBN`, `title`, `author_name`, `publication_id`, `price`, `
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `publication`
+--
+
+CREATE TABLE `publication` (
+  `publication_id` int(10) NOT NULL,
+  `publication_name` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `publication_place` varchar(40) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `publication`
+--
+
+INSERT INTO `publication` (`publication_id`, `publication_name`, `publication_place`) VALUES
+(1, 'Annanya Prokashoni', 'Bangla motor, Dhaka'),
+(2, 'Kakoli Prokashoni', 'Bangla motor, Dhaka'),
+(3, 'Prothoma Prokashoni', 'Mohakhali, Dhaka'),
+(4, 'Subin Prokashoni', 'Segun baghicha, Dhaka'),
+(5, 'Gyan Prokashoni', 'Dhanmondi, Dhaka'),
+(6, 'Kotha mala', 'Nilkhet, Dhaka'),
+(7, 'Onnokosh', 'Oxford road, Dhaka'),
+(8, 'Prithibi Prokashoni', 'Green road, Dhaka'),
+(9, 'Somabesh', 'West Purbapur, Dhaka');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `sign_up`
 --
 
@@ -253,6 +280,12 @@ INSERT INTO `sign_up` (`first_name`, `last_name`, `email`, `phone_no`, `address`
 --
 ALTER TABLE `book`
   ADD PRIMARY KEY (`ISBN`);
+
+--
+-- Indexes for table `publication`
+--
+ALTER TABLE `publication`
+  ADD PRIMARY KEY (`publication_id`);
 
 --
 -- Indexes for table `sign_up`
