@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 27, 2021 at 08:40 PM
+-- Generation Time: Dec 28, 2021 at 10:14 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -216,6 +216,21 @@ INSERT INTO `book` (`ISBN`, `title`, `author_name`, `publication_id`, `price`, `
 (270, 'Agun Pakhir Rahasya', 'Sunil Gnagopadhya', 8, 170, 'Thriller', 'yes', '4.0', 'no', 'no', '1997-08-11'),
 (271, 'Hotat Nirar Jonyo', 'Sunil Gnagopadhya', 7, 400, 'Drama', 'no', '3.5', 'yes', 'no', '1975-02-04'),
 (272, 'Sei Somoy', 'Sunil Gnagopadhya', 9, 200, 'Drama', 'no', '2.5', 'no', 'no', '2020-05-30');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `order_info`
+--
+
+CREATE TABLE `order_info` (
+  `email` varchar(30) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone_no` int(15) DEFAULT NULL,
+  `address` varchar(30) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `price` int(20) DEFAULT NULL,
+  `title` varchar(30) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `author_name` varchar(30) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
