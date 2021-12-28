@@ -1,0 +1,53 @@
+
+body{
+    background-color: #fdf5ea;
+    font-family: 'Oswald', sans-seri ;
+}
+.head{
+    text-align: center ;
+    font-size: 45px;
+    font-family: 'Oswald', sans-serif;
+}
+.aut{
+    text-align: center; 
+    
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    
+}
+li{
+    list-style: none;
+    
+}
+.books{
+    margin: 50px;
+    padding: 10px;
+    box-shadow: gray 5px 5px 10px;
+}
+h1{
+    padding-top: 20px;
+}
+
+.button{
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 15px;
+    width: 16%;
+    background-color:  #f8e9d2b9;
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover{
+    background-color: #f2dea2;
+    color: azure;
+    box-shadow: inset 0 0 0 5px #f2dea2;
+}
+.cad{
+    color: #1E90FF ;
+    font-weight: 600;
+}
