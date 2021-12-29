@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/books.css">
     <title> Books</title>
 </head>
@@ -21,7 +20,7 @@ if (!$db) {
   die("connection error".mysqli_connect_error());
 } 
 
-$sql = "SELECT title, author_name, genre, price FROM book ORDER BY title ASC";
+$sql = "SELECT  ISBN, title, author_name, genre, price FROM book ORDER BY title ASC";
 
 $result = mysqli_query($db, $sql);
 
@@ -36,11 +35,11 @@ $result = mysqli_query($db, $sql);
     ?>
     <div class="card books">
         <div class="card-body">
-          <h5 class="card-title"> <?php echo $row['title']; ?> </h5>
+          <h5 class="card-title cad"> <?php echo $row['title']; ?> </h5>
           <p class="card-text"> <?php echo $row['author_name']; ?> </p>
           <p class="card-text"> <?php echo $row['genre']; ?> </p>
           <p class="card-text"> <?php echo "Tk-".$row['price']; ?> </p>
-          <a href="#" class="button">more info</a>
+          <a href= <?php echo "order.php?ISBN=" .$row['ISBN']?> class="button">Order Now</a>
         </div>
       </div>
 

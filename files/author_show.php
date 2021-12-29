@@ -25,7 +25,7 @@ else{
 
 
 $getid= $_GET['author_name'];
-$sql = "SELECT title, price, genre from book WHERE author_name like '$getid%'";
+$sql = "SELECT ISBN, title, price, genre from book WHERE author_name like '$getid%'";
 
 
 $result = mysqli_query($db, $sql);
@@ -43,7 +43,7 @@ while ($row= mysqli_fetch_assoc($result))
           <p class="card-text "> <?php echo $row['genre']; ?> </p>
           <p class="card-text   "> <?php echo "Price"; echo " "; echo $row['price']; ?> </p>
           <!-- <a href="#" class="button">Order Now</a> -->
-          <button class="button">Order Now</button>
+          <a href= <?php echo " order.php?ISBN=" .$row['ISBN'] ?>><button class="button">Order Now</button></a>
         </div>
       </div>
                   

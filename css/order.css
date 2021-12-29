@@ -1,17 +1,19 @@
-body{
-    background-color: #fdf5ea;
-    font-family: 'Oswald', sans-serif; 
+.box{
+    height: 450px;
+    margin: 15px, 10px;
 }
-.books{
-    margin: 50px;
-    padding: 10px;
-    box-shadow: gray 5px 5px 10px;
+.tmk{
+    font-family:'Oswald', sans-serif;
+    color:  #1E90FF;
+    font-size: 48px;
 }
-h1{
-    padding-top: 20px;
+.amk{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
 }
 
-.button{
+.cad{
+    font-family: 'Oswald', sans-serif;
     margin: 10px 0;
     padding: 10px;
     border: none;
@@ -19,18 +21,13 @@ h1{
     cursor: pointer;
     font-size: 17px;
     border-radius: 15px;
-    width: 80%;
+    width: 20%;
     background-color:  #f8e9d2b9;
     text-decoration: none;
     color: black;
 }
-
-.button:hover{
+.cad:hover{
     background-color: #f2dea2;
     color: azure;
     box-shadow: inset 0 0 0 5px #f2dea2;
-}
-.cad{
-    color: #1E90FF ;
-    font-weight: 600;
 }
