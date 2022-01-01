@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/books.css">
-    <title> Books</title>
+    <link rel="shortcut icon" href="../images/icon.PNG" type="image/x-icon">
+    <title>search</title>
 </head>
 <body>
 
@@ -28,7 +29,7 @@ if(isset($_POST['search']))
 
     //echo $data;
 
-    $sql = "SELECT title, author_name, genre, price FROM book WHERE title LIKE '%$data%' "; 
+    $sql = "SELECT ISBN, title, author_name, genre, price FROM book WHERE title LIKE '%$data%' "; 
     $result = mysqli_query($db, $sql);
     if (mysqli_num_rows($result)>0) {
         while ($row= mysqli_fetch_assoc($result)) {
@@ -40,7 +41,7 @@ if(isset($_POST['search']))
                     <p class="card-text"> <?php echo "Author: ".$row['author_name']; ?> </p>
                     <p class="card-text"> <?php echo "Genre: ".$row['genre']; ?> </p>
                     <p class="card-text"> <?php echo "Tk-".$row['price']; ?> </p>
-                    <a href="#" class="button">ORDER NOW</a>
+                    <a href= <?php echo "order.php?ISBN=" .$row['ISBN']?> class="button">Order Now</a>
                 </div>
             </div>
 
@@ -55,7 +56,7 @@ if(isset($_POST['search']))
 
     //echo $data;
 
-    $sql = "SELECT title, author_name, genre, price FROM book WHERE author_name LIKE '%$data%' "; 
+    $sql = "SELECT ISBN, title, author_name, genre, price FROM book WHERE author_name LIKE '%$data%' "; 
     $result = mysqli_query($db, $sql);
     if (mysqli_num_rows($result)>0) {
         while ($row= mysqli_fetch_assoc($result)) {
@@ -67,7 +68,7 @@ if(isset($_POST['search']))
                     <p class="card-text"> <?php echo "Author: ".$row['author_name']; ?> </p>
                     <p class="card-text"> <?php echo "Genre: ".$row['genre']; ?> </p>
                     <p class="card-text"> <?php echo "Tk-".$row['price']; ?> </p>
-                    <a href="#" class="button">ORDER NOW</a>
+                    <a href= <?php echo "order.php?ISBN=" .$row['ISBN']?> class="button">Order Now</a>
                 </div>
             </div>
 
@@ -82,7 +83,7 @@ if(isset($_POST['search']))
 
     //echo $data;
 
-    $sql = "SELECT title, author_name, genre, price FROM book WHERE genre LIKE '%$data%' "; 
+    $sql = "SELECT ISBN, title, author_name, genre, price FROM book WHERE genre LIKE '%$data%' "; 
     $result = mysqli_query($db, $sql);
     if (mysqli_num_rows($result)>0) {
         while ($row= mysqli_fetch_assoc($result)) {
@@ -94,7 +95,7 @@ if(isset($_POST['search']))
                     <p class="card-text"> <?php echo "Author: ".$row['author_name']; ?> </p>
                     <p class="card-text"> <?php echo "Genre: ".$row['genre']; ?> </p>
                     <p class="card-text"> <?php echo "Tk-".$row['price']; ?> </p>
-                    <a href="#" class="button">ORDER NOW</a>
+                    <a href= <?php echo "order.php?ISBN=" .$row['ISBN']?> class="button">Order Now</a>
                 </div>
             </div>
 

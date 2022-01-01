@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/books.css">
     <title> New Arrival </title>
+    <link rel="shortcut icon" href="../images/icon.PNG" type="image/x-icon">
 </head>
 <body>
 
@@ -21,7 +22,7 @@ if (!$db) {
   die("connection error".mysqli_connect_error());
 } 
 
-$sql = "SELECT title, author_name, genre, price FROM book WHERE year BETWEEN 2015 AND 2017 ORDER BY title ASC";
+$sql = "SELECT ISBN, title, author_name, genre, price FROM book WHERE year BETWEEN 2015 AND 2017 ORDER BY title ASC";
 
 $result = mysqli_query($db, $sql);
 
@@ -36,11 +37,11 @@ $result = mysqli_query($db, $sql);
     ?>
     <div class="card books">
         <div class="card-body">
-          <h5 class="card-title"> <?php echo $row['title']; ?> </h5>
+          <h5 class="card-title" style=" color: rgb(189, 160, 107);"> <?php echo $row['title']; ?> </h5>
           <p class="card-text"> <?php echo $row['author_name']; ?> </p>
           <p class="card-text"> <?php echo $row['genre']; ?> </p>
           <p class="card-text"> <?php echo "Tk-".$row['price']; ?> </p>
-          <a href="#" class="button">more info</a>
+          <a href= <?php echo "order.php?ISBN=" .$row['ISBN']?> class="button">Order Now</a>
         </div>
       </div>
 

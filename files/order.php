@@ -8,7 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="../css/order.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="../css/order.css">
+    <link rel="shortcut icon" href="../images/icon.PNG" type="image/x-icon">
     <title> ORDER</title>
 </head>
 <body>
@@ -24,9 +26,15 @@ else{
 }
 
 $getid= $_GET['ISBN'];
-$sql= "SELECT  b.title, b.genre, b.author_name, p.publication_name, b.price from book AS b, publication AS p WHERE b.publication_id= p.publication_id AND b.ISBN= '$getid'";
+$sql= "SELECT b.ISBN, b.title, b.genre, b.author_name, p.publication_name, b.price from book AS b, publication AS p WHERE b.publication_id= p.publication_id AND b.ISBN= '$getid'";
 
 $result = mysqli_query($db, $sql);
+
+session_start();
+$email = $_SESSION['u_email'];
+
+$sql2="SELECT * FROM sign_up WHERE email='$email'";
+$result2=  mysqli_query($db, $sql2);
 
 // if(mysqli_num_rows($result)>0)
 // {
@@ -46,24 +54,61 @@ while ($row= mysqli_fetch_assoc($result))
       </div>
     </div>
   </div>
+
+  <?php 
+  
+  while ($row2= mysqli_fetch_assoc($result2))
+{
+
+
+  ?>
   <div class="col-sm-6">
     <div class="card box ">
       <div class="card-body ">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary cad">Confirm Order</a>
+        <h5 class="card-title"> <?php echo $row2['first_name'];?> </h5>
+        <p class="card-text"> <?php echo "Email: ". $row2['email'];?> </p>
+        <p class="card-text"> <?php echo "Phone no: ". $row2['phone_no'];?> </p>
+        <p class="card-text"> <?php echo "Address: ". $row2['address'];?> </p>
+        <a href="#" class="btn btn-primary cad" onclick="handleClick()">Confirm Order</a>
       </div>
     </div>
   </div>
 </div>
+
 <?php
+
+ $mail = $row2['email'];
+ $phone = $row2['phone_no'];
+ $address = $row2['address'];
+ $price =  $row['price'];
+ $title = $row['title'];
+ $author = $row['author_name'];
+?>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+  function handleClick(){
+    swal('Order Confirm', 'Thank you', 'success');
+    <?php
+       $sql3= "INSERT INTO order_info (email, phone_no, address, price, title, author_name) VALUES ('$mail', $phone, '$address', $price, '$title', '$author')";
+
+       if (mysqli_query($db, $sql3)) {
+        //echo "Information added<br>";
+      }
+    ?>
+
+    
+  }
+</script>
+
+<?php
+
+  }
 }
-            
-//   } else {
-//     echo "0 results";
-//   }
   
-  ?>
- 
+?>
+
+
+
   </body>
   </html>

@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/books.css">
-    <title> Books</title>
+    <title> Pdf Books</title>
+    <link rel="shortcut icon" href="../images/icon.PNG" type="image/x-icon">
 </head>
 <body>
 
@@ -36,10 +37,10 @@ $result = mysqli_query($db, $sql);
     ?>
     <div class="card books">
         <div class="card-body">
-          <h5 class="card-title"> <?php echo $row['title']; ?> </h5>
+          <h5 class="card-title" style=" color: rgb(189, 160, 107);"> <?php echo $row['title']; ?> </h5>
           <p class="card-text"> <?php echo $row['author_name']; ?> </p>
           <p class="card-text"> <?php echo $row['genre']; ?> </p>
-          <a href="#" class="button">more info</a>
+          <a class="button" onclick="handleClick()">Download</a>
         </div>
       </div>
 
@@ -51,5 +52,11 @@ $result = mysqli_query($db, $sql);
 
 ?>
 
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+  function handleClick(){
+    swal("Download Complete", "Thank you", "success");
+  }
+</script>
 </body>
 </html>

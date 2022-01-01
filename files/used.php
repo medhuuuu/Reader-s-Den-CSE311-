@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/books.css">
-    <title> Books</title>
+    <link rel="shortcut icon" href="../images/icon.PNG" type="image/x-icon">
+    <title>Used Books</title>
 </head>
 <body>
 
@@ -21,7 +22,7 @@ if (!$db) {
   die("connection error".mysqli_connect_error());
 } 
 
-$sql = "SELECT title, author_name, genre, price FROM book WHERE used='yes' ORDER BY title ASC";
+$sql = "SELECT ISBN, title, author_name, genre, price FROM book WHERE used='yes' ORDER BY title ASC";
 
 $result = mysqli_query($db, $sql);
 
@@ -36,11 +37,11 @@ $result = mysqli_query($db, $sql);
     ?>
     <div class="card books">
         <div class="card-body">
-          <h5 class="card-title"> <?php echo $row['title']; ?> </h5>
+          <h5 class="card-title" style=" color: rgb(189, 160, 107);"> <?php echo $row['title']; ?> </h5>
           <p class="card-text"> <?php echo $row['author_name']; ?> </p>
           <p class="card-text"> <?php echo $row['genre']; ?> </p>
-          <p class="card-text"> <?php echo "Tk-".$row['price']; ?> </p>
-          <a href="#" class="button">more info</a>
+          <p class="card-text"> <?php echo "Tk-".$row['price']-50; ?> </p>
+          <a href= <?php echo "order.php?ISBN=" .$row['ISBN']?> class="button">Order Now</a>
         </div>
       </div>
 

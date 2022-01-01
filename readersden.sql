@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 28, 2021 at 10:14 PM
+-- Generation Time: Jan 01, 2022 at 02:13 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -232,6 +232,48 @@ CREATE TABLE `order_info` (
   `author_name` varchar(30) COLLATE utf8mb4_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `order_info`
+--
+
+INSERT INTO `order_info` (`email`, `phone_no`, `address`, `price`, `title`, `author_name`) VALUES
+('myname@gmail.com', 123456, 'cumilla', 170, '1971', 'Humayun Ahmed'),
+('myname@gmail.com', 123456, 'cumilla', 170, '1971', 'Humayun Ahmed'),
+('myname@gmail.com', 123456, 'cumilla', 200, 'Aaj Himur biye', 'Humayun Ahmed'),
+('myname@gmail.com', 123456, 'cumilla', 170, 'Abar Tora Kipte Ho', 'Anisul Haque'),
+('myname@gmail.com', 123456, 'cumilla', 170, 'Abar Tora Kipte Ho', 'Anisul Haque'),
+('myname@gmail.com', 123456, 'cumilla', 170, 'Amar Ekta Dukkho Ache', 'Anisul Haque'),
+('myname@gmail.com', 123456, 'cumilla', 300, 'America', 'Dr. Zafor Iqbal'),
+('myname@gmail.com', 123456, 'cumilla', 170, 'Swopner Bazar', 'Samaresh Mazumder'),
+('myname@gmail.com', 123456, 'cumilla', 100, 'Alo Andhokare Jai ', 'Anisul Haque'),
+('saminnsucse@gmail.com', 1955755125, '39-40 Mitali Road, Rayer Bazar', 350, 'Animan', 'Dr. Zafor Iqbal'),
+('saminnsucse@gmail.com', 1955755125, '39-40 Mitali Road, Rayer Bazar', 350, 'Animan', 'Dr. Zafor Iqbal'),
+('saminnsucse@gmail.com', 1955755125, '39-40 Mitali Road, Rayer Bazar', 350, 'Animan', 'Dr. Zafor Iqbal'),
+('saminnsucse@gmail.com', 1955755125, '39-40 Mitali Road, Rayer Bazar', 300, 'Badshah Namdar', 'Humayun Ahmed'),
+('saminnsucse@gmail.com', 1955755125, '39-40 Mitali Road, Rayer Bazar', 300, 'Badshah Namdar', 'Humayun Ahmed'),
+('saminnsucse@gmail.com', 1955755125, '39-40 Mitali Road, Rayer Bazar', 320, 'Aro tuntuni aro chotacchu', 'Dr. Zafor Iqbal'),
+('saminnsucse@gmail.com', 1955755125, '39-40 Mitali Road, Rayer Bazar', 200, 'Aaj Himur biye', 'Humayun Ahmed'),
+('saminnsucse@gmail.com', 1955755125, '39-40 Mitali Road, Rayer Bazar', 170, '1971', 'Humayun Ahmed'),
+('saminnsucse@gmail.com', 1955755125, '39-40 Mitali Road, Rayer Bazar', 270, 'Ke kotha Koy', 'Humayun Ahmed'),
+('saminnsucse@gmail.com', 1955755125, '39-40 Mitali Road, Rayer Bazar', 100, 'Abrity', 'Anisul Haque'),
+('saminnsucse@gmail.com', 1955755125, '39-40 Mitali Road, Rayer Bazar', 100, 'Fand', 'Anisul Haque'),
+('saminnsucse@gmail.com', 1955755125, '39-40 Mitali Road, Rayer Bazar', 200, 'Deyal', 'Humayun Ahmed'),
+('saminnsucse@gmail.com', 1955755125, '39-40 Mitali Road, Rayer Bazar', 220, 'Kutu Mia', 'Humayun Ahmed'),
+('saminnsucse@gmail.com', 1955755125, '39-40 Mitali Road, Rayer Bazar', 220, 'Amar Boro Bhai Humayun Ahmed', 'Dr. Zafor Iqbal'),
+('myname@gmail.com', 123456, 'cumilla', 170, '1971', 'Humayun Ahmed'),
+('myname@gmail.com', 123456, 'cumilla', 170, '1971', 'Humayun Ahmed'),
+('myname@gmail.com', 123456, 'cumilla', 170, '1971', 'Humayun Ahmed'),
+('myname@gmail.com', 123456, 'cumilla', 170, '1971', 'Humayun Ahmed'),
+('myname@gmail.com', 123456, 'cumilla', 220, 'Amar Boro Bhai Humayun Ahmed', 'Dr. Zafor Iqbal'),
+('myname@gmail.com', 123456, 'cumilla', 300, 'America', 'Dr. Zafor Iqbal'),
+('myname@gmail.com', 123456, 'cumilla', 100, 'Abrity', 'Anisul Haque'),
+('myname@gmail.com', 123456, 'cumilla', 170, 'Amar Ekta Dukkho Ache', 'Anisul Haque'),
+('myname@gmail.com', 123456, 'cumilla', 170, 'Amar Ekta Dukkho Ache', 'Anisul Haque'),
+('myname@gmail.com', 123456, 'cumilla', 170, 'Amar Ekta Dukkho Ache', 'Anisul Haque'),
+('myname@gmail.com', 123456, 'cumilla', 170, 'Amar Ekta Dukkho Ache', 'Anisul Haque'),
+('myname@gmail.com', 123456, 'cumilla', 375, 'Devi', 'Humayun Ahmed'),
+('myname@gmail.com', 123456, 'cumilla', 170, '1971', 'Humayun Ahmed');
+
 -- --------------------------------------------------------
 
 --
@@ -282,6 +324,7 @@ INSERT INTO `sign_up` (`first_name`, `last_name`, `email`, `phone_no`, `address`
 ('tanjila', 'ahmed', 'myname@gmail.com', 123456, 'cumilla', 'mymymy'),
 ('Nazmus ', 'samin', 'sadatnazmus567@gmail.com', 123456, 'cumilla', '12345'),
 ('Nazmus Sadat', 'ahmed', 'sadatsamin52@yahoo.com', 2147483647, 'Dhanmondi, Dhaka', '123456'),
+('selena', 'akter', 'salena@gmail.com', 1521561780, 'central road', 'asdf'),
 ('Nazmus Sadat', 'bhuiyan', 'saminmymy@gmail.com', 2147483647, 'dhaka', 'saminnsucse'),
 ('Nazmus Sadat', 'Medha', 'saminnsucse@gmail.com', 1955755125, '39-40 Mitali Road, Rayer Bazar, Zigatola.', 'saminnsucse'),
 ('Nazmus Sadat', 'ahmed', 'tamedhaisgood@gmail.com', 2147483647, 'dhaka', 'ttrrreweq');
